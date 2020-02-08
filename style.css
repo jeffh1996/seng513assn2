@@ -1,0 +1,28 @@
+.page-container{
+	display: flex;
+	justify-content: center;
+}
+
+#display{
+	grid-column-start: 1; 
+	grid-column-end: 5; 
+	width: 100%;
+}
+
+button{
+	justify-self: stretch;
+	height: 80px;
+}
+
+.calculator-container{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	border: 1px solid black;
+	width: 600px;
+}
+
+@media screen and (max-width: 426px) {
+  .calculator-container {
+    width: 100%;
+  }
+}
